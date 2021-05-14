@@ -20,7 +20,7 @@ if (isset($_POST['register'])) {
 
     // Si el email existe entonces se muestra el mensaje de error
     if ($query->rowCount() > 0) {
-        echo '<p class="error">The email address is already registered!</p>';
+        echo '<p class="error">El email ingresado ya está registrado!</p>';
     }
 
     // Si el email no existe entonces se muestra el mensaje 
